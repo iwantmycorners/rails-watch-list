@@ -3,7 +3,7 @@
 
 <%= simple_form_for [ @list, @bookmark ] do |f| %>
   <%= f.input :comment %>
-  <%= f.association :movie %>
+  <%= f.association :movie, label_method: :title %>
   <%= f.button :submit %>
 <% end %>
 
